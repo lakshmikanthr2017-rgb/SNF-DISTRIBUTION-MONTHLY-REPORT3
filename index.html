@@ -1,0 +1,2066 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ಪೂರಕ ಪೌಷ್ಠಿಕ ಆಹಾರ ತಿಂಗಳುವಾರು ವಿತರಣಾ ವಹಿ</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+    font-family:'Segoe UI','Noto Sans Kannada',Arial,sans-serif;
+}
+
+body{
+    background:#f4f7f6;
+    margin:0;
+    padding:15px;
+    color:#333;
+}
+
+.container{
+    max-width:1250px;
+    margin:auto;
+    background:#fff;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+h1,h2,h3{
+    text-align:center;
+    color:#1a365d;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+.school-header{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:space-between;
+    background:#e2e8f0;
+    padding:15px;
+    border-radius:6px;
+    margin-bottom:20px;
+}
+
+.school-header div{
+    flex:1;
+    min-width:250px;
+}
+
+label{
+    font-weight:bold;
+    display:block;
+    margin-bottom:5px;
+    color:#2d3748;
+}
+
+input,select{
+    width:100%;
+    padding:8px 12px;
+    border:1px solid #cbd5e0;
+    border-radius:4px;
+    font-size:14px;
+}
+
+.entry-card{
+    background:#edf2f7;
+    padding:15px;
+    border-radius:6px;
+    border-left:5px solid #3182ce;
+    margin-bottom:20px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:12px;
+    align-items:end;
+}
+
+.btn{
+    background:#3182ce;
+    color:white;
+    padding:9px 16px;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#2b6cb0;
+}
+
+.btn-success{
+    background:#38a169;
+}
+
+.btn-success:hover{
+    background:#2f855a;
+}
+
+.btn-danger{
+    background:#e53e3e;
+}
+
+.btn-danger:hover{
+    background:#c53030;
+}
+
+.btn-print{
+    background:#805ad5;
+}
+
+.btn-print:hover{
+    background:#6b46c1;
+}
+
+.action-bar{
+    display:flex;
+    gap:10px;
+    justify-content:flex-end;
+    margin-bottom:15px;
+    flex-wrap:wrap;
+}
+
+.table-wrapper{
+    width:100%;
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+    font-size:13px;
+}
+
+th,td{
+    border:1px solid #cbd5e0;
+    padding:7px 5px;
+    text-align:center;
+}
+
+th{
+    background:#2b6cb0;
+    color:white;
+    font-weight:600;
+}
+
+tr:nth-child(even){
+    background:#f7fafc;
+}
+
+.total-row{
+    background:#feebc8 !important;
+    font-weight:bold;
+}
+
+.consolidation-section{
+    margin-top:35px;
+    padding:20px;
+    background:#faf5ff;
+    border:2px dashed #9f7aea;
+    border-radius:8px;
+}
+
+.consolidation-table{
+    max-width:650px;
+    margin:15px auto;
+}
+
+.consolidation-table th{
+    background:#6b46c1;
+}
+
+.section-title{
+    background:#e9d8fd;
+    padding:8px;
+    border-radius:5px;
+    margin-top:25px;
+}
+
+.footer-credit{
+    margin-top:25px;
+    text-align:center;
+    font-weight:bold;
+    color:#4a5568;
+    padding:10px;
+    border-top:1px solid #e2e8f0;
+}
+
+
+/* ಮೊಬೈಲ್ */
+
+@media(max-width:600px){
+
+    body{
+        padding:5px;
+    }
+
+    .container{
+        padding:10px;
+    }
+
+    h1{
+        font-size:20px;
+    }
+
+    h2{
+        font-size:18px;
+    }
+
+    .school-header div{
+        min-width:100%;
+    }
+
+    .action-bar{
+        justify-content:center;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+}
+
+
+/* PRINT */
+
+@media print{
+
+    .no-print,
+    .action-bar,
+    .entry-card,
+    .footer-credit{
+        display:none !important;
+    }
+
+    body{
+        background:white;
+        padding:0;
+    }
+
+    .container{
+        box-shadow:none;
+        padding:0;
+        max-width:100%;
+    }
+
+    @page{
+        size:A4 landscape;
+        margin:8mm;
+    }
+
+    table{
+        font-size:10px;
+    }
+
+    th{
+        background:#333 !important;
+        color:white !important;
+        -webkit-print-color-adjust:exact;
+        print-color-adjust:exact;
+    }
+
+    .consolidation-section{
+        border:none;
+        background:white;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+<h1>ಪೂರಕ ಪೌಷ್ಠಿಕ ಆಹಾರ ತಿಂಗಳುವಾರು ವಿತರಣಾ ವಹಿ</h1>
+
+
+<!-- ಶಾಲೆಯ ಮಾಹಿತಿ -->
+
+<div class="school-header">
+
+    <div>
+        <label for="schoolName">ಶಾಲೆಯ ಹೆಸರು:</label>
+
+        <input
+            type="text"
+            id="schoolName"
+            value="ಸರ್ಕಾರಿ ಹಿರಿಯ/ಕಿರಿಯ ಪ್ರಾಥಮಿಕ ಪಾಠಶಾಲೆ"
+            onchange="saveHeaderData()"
+        >
+    </div>
+
+
+    <div>
+
+        <label for="academicYear">ಸಾಲು / ವರ್ಷ:</label>
+
+        <input
+            type="text"
+            id="academicYear"
+            value="2026-27"
+            onchange="saveHeaderData()"
+        >
+
+    </div>
+
+
+    <div>
+
+        <label for="monthSelect">ತಿಂಗಳು:</label>
+
+        <select id="monthSelect" onchange="saveHeaderData()">
+
+            <option value="ಏಪ್ರಿಲ್">ಏಪ್ರಿಲ್</option>
+            <option value="ಮೇ">ಮೇ</option>
+            <option value="ಜೂನ್">ಜೂನ್</option>
+            <option value="ಜುಲೈ">ಜುಲೈ</option>
+            <option value="ಆಗಸ್ಟ್">ಆಗಸ್ಟ್</option>
+            <option value="ಸೆಪ್ಟೆಂಬರ್">ಸೆಪ್ಟೆಂಬರ್</option>
+            <option value="ಅಕ್ಟೋಬರ್">ಅಕ್ಟೋಬರ್</option>
+            <option value="ನವೆಂಬರ್">ನವೆಂಬರ್</option>
+            <option value="ಡಿಸೆಂಬರ್">ಡಿಸೆಂಬರ್</option>
+            <option value="ಜನವರಿ">ಜನವರಿ</option>
+            <option value="ಫೆಬ್ರವರಿ">ಫೆಬ್ರವರಿ</option>
+            <option value="ಮಾರ್ಚ್">ಮಾರ್ಚ್</option>
+
+        </select>
+
+    </div>
+
+</div>
+
+
+
+<!-- ದಿನನಿತ್ಯದ Entry -->
+
+<div class="entry-card no-print">
+
+<h3>➕ ದಿನನಿತ್ಯದ ಮಾಹಿತಿ ನಮೂದಿಸಿ</h3>
+
+
+<div class="form-grid">
+
+
+<div>
+
+<label for="entryDate">ದಿನಾಂಕ:</label>
+
+<input
+    type="date"
+    id="entryDate"
+>
+
+</div>
+
+
+
+<div>
+
+<label for="att1to5">1 ರಿಂದ 5 ಹಾಜರಾತಿ:</label>
+
+<input
+    type="number"
+    id="att1to5"
+    value="0"
+    min="0"
+    oninput="calculateTotal()"
+>
+
+</div>
+
+
+
+<div>
+
+<label for="att6to8">6 ರಿಂದ 8 ಹಾಜರಾತಿ:</label>
+
+<input
+    type="number"
+    id="att6to8"
+    value="0"
+    min="0"
+    oninput="calculateTotal()"
+>
+
+</div>
+
+
+
+<div>
+
+<label>ಒಟ್ಟು ಹಾಜರಾತಿ:</label>
+
+<input
+    type="number"
+    id="attTotal"
+    value="0"
+    readonly
+    style="background:#e2e8f0;font-weight:bold;"
+>
+
+</div>
+
+
+
+<div>
+
+<label for="foodType">ಆಹಾರದ ವಿಧ:</label>
+
+<select id="foodType">
+
+<option value="ಮೊಟ್ಟೆ">ಮೊಟ್ಟೆ</option>
+
+<option value="ಬಾಳೆಹಣ್ಣು">ಬಾಳೆಹಣ್ಣು</option>
+
+</select>
+
+</div>
+
+
+
+<div>
+
+<label for="grantType">ಅನುದಾನ:</label>
+
+<select id="grantType">
+
+<option value="STATE">STATE</option>
+
+<option value="APF">APF</option>
+
+</select>
+
+</div>
+
+
+
+<div>
+
+<button
+    class="btn btn-success"
+    onclick="addEntry()"
+    style="width:100%;"
+>
+ಸೇರಿಸಿ
+</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<!-- Buttons -->
+
+<div class="action-bar no-print">
+
+<button
+    class="btn btn-print"
+    onclick="printRegister()"
+>
+🖨️ ವಿತರಣಾ ವಹಿ ಪ್ರಿಂಟ್
+</button>
+
+
+<button
+    class="btn btn-print"
+    onclick="printConsolidation()"
+>
+📊 ಮಾಸಿಕ ಕ್ರೋಢೀಕರಣ ಪ್ರಿಂಟ್
+</button>
+
+
+<button
+    class="btn btn-danger"
+    onclick="clearAllData()"
+>
+🗑️ ಎಲ್ಲಾ ಮಾಹಿತಿ ಅಳಿಸಿ
+</button>
+
+</div>
+
+
+
+<!-- ವಿತರಣಾ ವಹಿ -->
+
+<div id="registerPrintArea">
+
+
+<div style="text-align:center;margin-bottom:10px;">
+
+<h2 id="printSchoolName">
+ಸರ್ಕಾರಿ ಹಿರಿಯ/ಕಿರಿಯ ಪ್ರಾಥಮಿಕ ಪಾಠಶಾಲೆ
+</h2>
+
+<p style="margin:0;font-weight:bold;">
+
+ಪೂರಕ ಪೌಷ್ಠಿಕ ಆಹಾರ ವಿತರಣಾ ವಹಿ -
+
+ತಿಂಗಳು:
+<span id="printMonth">ಆಗಸ್ಟ್</span>
+
+|
+
+ಸಾಲು:
+<span id="printYear">2026-27</span>
+
+</p>
+
+</div>
+
+
+
+<div class="table-wrapper">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th rowspan="2">
+ದಿನಾಂಕ<br>
+(dd/mm/yyyy)
+</th>
+
+<th colspan="2">
+ಹಾಜರಾತಿ
+</th>
+
+<th rowspan="2">
+ಒಟ್ಟು
+</th>
+
+<th rowspan="2">
+ಪೌಷ್ಠಿಕ ಆಹಾರದ ವಿಧ
+</th>
+
+<th rowspan="2">
+ಅನುದಾನ
+</th>
+
+<th colspan="4">
+ಮೊಟ್ಟೆ ವಿವರಗಳು (₹)
+</th>
+
+<th colspan="2">
+ಬಾಳೆಹಣ್ಣು ವಿವರಗಳು (₹)
+</th>
+
+<th rowspan="2">
+ಒಟ್ಟು ಮೊತ್ತ (₹)
+</th>
+
+<th rowspan="2" class="no-print">
+ಕ್ರಿಯೆ
+</th>
+
+</tr>
+
+
+<tr>
+
+<th>1 ರಿಂದ 5</th>
+
+<th>6 ರಿಂದ 8</th>
+
+<th>ದರ (₹5)</th>
+
+<th>ಸಾಗಾಣಿಕೆ (₹0.20)</th>
+
+<th>ಕೂಲಿ (₹0.30)</th>
+
+<th>ಇಂಧನ (₹0.50)</th>
+
+<th>ದರ (₹5.80)</th>
+
+<th>ಸಾಗಾಣಿಕೆ (₹0.20)</th>
+
+</tr>
+
+</thead>
+
+
+<tbody id="dataTableBody">
+
+</tbody>
+
+
+<tfoot>
+
+<tr
+    class="total-row"
+    id="totalRow"
+>
+</tr>
+
+</tfoot>
+
+</table>
+
+</div>
+
+</div>
+
+
+
+<!-- ಮಾಸಿಕ ಕ್ರೋಢೀಕರಣ -->
+
+<div
+    class="consolidation-section"
+    id="consolidationPrintArea"
+>
+
+
+<h2>
+ಮಾಸಿಕ ಕ್ರೋಢೀಕರಣ ವರದಿ
+</h2>
+
+
+<p style="text-align:center;font-weight:bold;margin-bottom:15px;">
+
+ತಿಂಗಳು:
+<span id="conMonth">ಆಗಸ್ಟ್</span>
+
+&nbsp; | &nbsp;
+
+ಸಾಲು:
+<span id="conYear">2026-27</span>
+
+</p>
+
+
+
+<!-- APF -->
+
+<h3 class="section-title">
+APF ಅನುದಾನ
+</h3>
+
+
+<table class="consolidation-table">
+
+<thead>
+
+<tr>
+
+<th>
+ವಿವರ
+</th>
+
+<th>
+ಒಟ್ಟು
+</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+<tr>
+
+<td>
+ಒಟ್ಟು ದಿನಗಳು
+</td>
+
+<td id="apfDays">
+0
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+ಮೊಟ್ಟೆ ಒಟ್ಟು ಹಾಜರಾತಿ
+</td>
+
+<td id="apfEggAttendance">
+0
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+ಬಾಳೆಹಣ್ಣು ಒಟ್ಟು ಹಾಜರಾತಿ
+</td>
+
+<td id="apfBananaAttendance">
+0
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<!-- STATE -->
+
+<h3 class="section-title">
+STATE ಅನುದಾನ
+</h3>
+
+
+<table class="consolidation-table">
+
+<thead>
+
+<tr>
+
+<th>
+ವಿವರ
+</th>
+
+<th>
+ಒಟ್ಟು
+</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+<tr>
+
+<td>
+ಒಟ್ಟು ದಿನಗಳು
+</td>
+
+<td id="stateDays">
+0
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+ಮೊಟ್ಟೆ ಒಟ್ಟು ಹಾಜರಾತಿ
+</td>
+
+<td id="stateEggAttendance">
+0
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+ಬಾಳೆಹಣ್ಣು ಒಟ್ಟು ಹಾಜರಾತಿ
+</td>
+
+<td id="stateBananaAttendance">
+0
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<!-- ವೆಚ್ಚ -->
+
+<h3 class="section-title">
+ಪೌಷ್ಠಿಕ ಆಹಾರದ ವೆಚ್ಚದ ವಿವರ
+</h3>
+
+
+<table class="consolidation-table">
+
+<thead>
+
+<tr>
+
+<th>
+ವಿವರ
+</th>
+
+<th>
+ಒಟ್ಟು ಮೊತ್ತ (₹)
+</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+
+<tr>
+
+<td>
+ಮೊಟ್ಟೆಯ ಒಟ್ಟು ಹಣ (₹5)
+</td>
+
+<td id="conEggCost">
+₹ 0.00
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+ಮೊಟ್ಟೆ ಸಾಗಾಣಿಕಾ ವೆಚ್ಚ (₹0.20)
+</td>
+
+<td id="conEggTrans">
+₹ 0.00
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+ಮೊಟ್ಟೆ ಸುಲಿಯುವ ಕೂಲಿ (₹0.30)
+</td>
+
+<td id="conEggPeel">
+₹ 0.00
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+ಇಂಧನ ವೆಚ್ಚ (₹0.50)
+</td>
+
+<td id="conEggFuel">
+₹ 0.00
+</td>
+
+</tr>
+
+
+<tr
+    style="background:#edf2f7;font-weight:bold;"
+>
+
+<td>
+ಮೊಟ್ಟೆಯ ಒಟ್ಟು ವೆಚ್ಚ
+</td>
+
+<td id="conEggSubTotal">
+₹ 0.00
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+ಬಾಳೆಹಣ್ಣಿನ ಒಟ್ಟು ಹಣ (₹5.80)
+</td>
+
+<td id="conBananaCost">
+₹ 0.00
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+ಬಾಳೆಹಣ್ಣು ಸಾಗಾಣಿಕಾ ವೆಚ್ಚ (₹0.20)
+</td>
+
+<td id="conBananaTrans">
+₹ 0.00
+</td>
+
+</tr>
+
+
+<tr
+    style="background:#edf2f7;font-weight:bold;"
+>
+
+<td>
+ಬಾಳೆಹಣ್ಣಿನ ಒಟ್ಟು ವೆಚ್ಚ
+</td>
+
+<td id="conBananaSubTotal">
+₹ 0.00
+</td>
+
+</tr>
+
+
+<tr
+    class="total-row"
+    style="font-size:15px;"
+>
+
+<td>
+ಒಟ್ಟು ವೆಚ್ಚ
+</td>
+
+<td id="conGrandTotal">
+₹ 0.00
+</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+
+
+<!-- Footer -->
+
+<div class="footer-credit no-print">
+
+ಸಿದ್ಧಪಡಿಸಿದವರು : LAKSHMIKANTH R
+
+</div>
+
+
+</div>
+
+
+
+<script>
+
+
+/* =========================================
+   DATA
+========================================= */
+
+let entries =
+JSON.parse(
+    localStorage.getItem('snf_entries_v2')
+) || [];
+
+
+
+/* =========================================
+   PAGE LOAD
+========================================= */
+
+window.onload=function(){
+
+    document.getElementById('entryDate').valueAsDate =
+        new Date();
+
+    loadHeaderData();
+
+    renderTable();
+
+};
+
+
+
+/* =========================================
+   ATTENDANCE TOTAL
+========================================= */
+
+function calculateTotal(){
+
+    const c1to5 =
+        parseFloat(
+            document.getElementById('att1to5').value
+        ) || 0;
+
+
+    const c6to8 =
+        parseFloat(
+            document.getElementById('att6to8').value
+        ) || 0;
+
+
+    document.getElementById('attTotal').value =
+        c1to5 + c6to8;
+
+}
+
+
+
+/* =========================================
+   HEADER SAVE
+========================================= */
+
+function saveHeaderData(){
+
+    const headerData={
+
+        schoolName:
+            document.getElementById('schoolName').value,
+
+        academicYear:
+            document.getElementById('academicYear').value,
+
+        month:
+            document.getElementById('monthSelect').value
+
+    };
+
+
+    localStorage.setItem(
+        'snf_header_v2',
+        JSON.stringify(headerData)
+    );
+
+
+    updateHeaderUI();
+
+}
+
+
+
+/* =========================================
+   HEADER LOAD
+========================================= */
+
+function loadHeaderData(){
+
+    const headerData =
+        JSON.parse(
+            localStorage.getItem('snf_header_v2')
+        );
+
+
+    if(headerData){
+
+        document.getElementById('schoolName').value =
+            headerData.schoolName ||
+            "ಸರ್ಕಾರಿ ಹಿರಿಯ/ಕಿರಿಯ ಪ್ರಾಥಮಿಕ ಪಾಠಶಾಲೆ";
+
+
+        document.getElementById('academicYear').value =
+            headerData.academicYear ||
+            "2026-27";
+
+
+        document.getElementById('monthSelect').value =
+            headerData.month ||
+            "ಆಗಸ್ಟ್";
+
+    }
+
+
+    updateHeaderUI();
+
+}
+
+
+
+/* =========================================
+   HEADER UI
+========================================= */
+
+function updateHeaderUI(){
+
+    const sName =
+        document.getElementById('schoolName').value;
+
+    const aYear =
+        document.getElementById('academicYear').value;
+
+    const month =
+        document.getElementById('monthSelect').value;
+
+
+    document.getElementById(
+        'printSchoolName'
+    ).innerText=sName;
+
+
+    document.getElementById(
+        'printMonth'
+    ).innerText=month;
+
+
+    document.getElementById(
+        'printYear'
+    ).innerText=aYear;
+
+
+    document.getElementById(
+        'conMonth'
+    ).innerText=month;
+
+
+    document.getElementById(
+        'conYear'
+    ).innerText=aYear;
+
+}
+
+
+
+/* =========================================
+   DATE FORMAT
+========================================= */
+
+function formatDateToDDMMYYYY(dateStr){
+
+    if(!dateStr) return '';
+
+    const parts=dateStr.split('-');
+
+    if(parts.length===3){
+
+        return `${parts[2]}/${parts[1]}/${parts[0]}`;
+
+    }
+
+    return dateStr;
+
+}
+
+
+
+/* =========================================
+   ADD ENTRY
+========================================= */
+
+function addEntry(){
+
+    const rawDate =
+        document.getElementById('entryDate').value;
+
+
+    const att1to5 =
+        parseInt(
+            document.getElementById('att1to5').value
+        ) || 0;
+
+
+    const att6to8 =
+        parseInt(
+            document.getElementById('att6to8').value
+        ) || 0;
+
+
+    const totalAtt =
+        att1to5 + att6to8;
+
+
+    const foodType =
+        document.getElementById('foodType').value;
+
+
+    const grantType =
+        document.getElementById('grantType').value;
+
+
+
+    if(!rawDate){
+
+        alert("ದಯವಿಟ್ಟು ದಿನಾಂಕವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ!");
+
+        return;
+
+    }
+
+
+
+    if(totalAtt<=0){
+
+        alert("ದಯವಿಟ್ಟು ಹಾಜರಾತಿಯನ್ನು ನಮೂದಿಸಿ!");
+
+        return;
+
+    }
+
+
+
+    const formattedDate =
+        formatDateToDDMMYYYY(rawDate);
+
+
+
+    /*
+       ಒಂದೇ ದಿನ + ಒಂದೇ ಅನುದಾನ + ಬೇರೆ ಆಹಾರ
+       ಇದ್ದರೆ ಅದೇ ಸಾಲಿನಲ್ಲಿ ಸೇರಿಸಲಾಗುತ್ತದೆ.
+    */
+
+    let existingIndex =
+        entries.findIndex(
+            e =>
+            e.date===formattedDate &&
+            e.grantType===grantType
+        );
+
+
+
+    if(existingIndex!==-1){
+
+        let item=entries[existingIndex];
+
+
+        /*
+           ಆಹಾರದ ಹೆಸರು ಸೇರಿಸಿ
+        */
+
+        if(!item.foodType.includes(foodType)){
+
+            item.foodType +=
+                `, ${foodType}`;
+
+        }
+
+
+        /*
+           ಹಾಜರಾತಿಯನ್ನು update ಮಾಡುವುದು
+        */
+
+        item.att1to5 =
+            Math.max(
+                Number(item.att1to5)||0,
+                att1to5
+            );
+
+
+        item.att6to8 =
+            Math.max(
+                Number(item.att6to8)||0,
+                att6to8
+            );
+
+
+        item.totalAtt =
+            item.att1to5 +
+            item.att6to8;
+
+
+
+        /*
+           ಮೊಟ್ಟೆ
+        */
+
+        if(foodType==="ಮೊಟ್ಟೆ"){
+
+            item.eggRate =
+                item.totalAtt*5;
+
+            item.eggTrans =
+                item.totalAtt*0.20;
+
+            item.eggPeel =
+                item.totalAtt*0.30;
+
+            item.eggFuel =
+                item.totalAtt*0.50;
+
+        }
+
+
+
+        /*
+           ಬಾಳೆಹಣ್ಣು
+        */
+
+        if(foodType==="ಬಾಳೆಹಣ್ಣು"){
+
+            item.bananaRate =
+                item.totalAtt*5.80;
+
+            item.bananaTrans =
+                item.totalAtt*0.20;
+
+        }
+
+
+
+        item.rowTotal =
+
+            (item.eggRate||0) +
+            (item.eggTrans||0) +
+            (item.eggPeel||0) +
+            (item.eggFuel||0) +
+            (item.bananaRate||0) +
+            (item.bananaTrans||0);
+
+    }
+
+
+    else{
+
+        let eggRate=0;
+        let eggTrans=0;
+        let eggPeel=0;
+        let eggFuel=0;
+
+        let bananaRate=0;
+        let bananaTrans=0;
+
+
+
+        if(foodType==="ಮೊಟ್ಟೆ"){
+
+            eggRate =
+                totalAtt*5;
+
+            eggTrans =
+                totalAtt*0.20;
+
+            eggPeel =
+                totalAtt*0.30;
+
+            eggFuel =
+                totalAtt*0.50;
+
+        }
+
+
+
+        if(foodType==="ಬಾಳೆಹಣ್ಣು"){
+
+            bananaRate =
+                totalAtt*5.80;
+
+            bananaTrans =
+                totalAtt*0.20;
+
+        }
+
+
+
+        const rowTotal =
+
+            eggRate +
+            eggTrans +
+            eggPeel +
+            eggFuel +
+            bananaRate +
+            bananaTrans;
+
+
+
+        const entry={
+
+            id:Date.now(),
+
+            date:formattedDate,
+
+            rawDate:rawDate,
+
+            att1to5:att1to5,
+
+            att6to8:att6to8,
+
+            totalAtt:totalAtt,
+
+            foodType:foodType,
+
+            grantType:grantType,
+
+            eggRate:eggRate,
+
+            eggTrans:eggTrans,
+
+            eggPeel:eggPeel,
+
+            eggFuel:eggFuel,
+
+            bananaRate:bananaRate,
+
+            bananaTrans:bananaTrans,
+
+            rowTotal:rowTotal
+
+        };
+
+
+        entries.push(entry);
+
+    }
+
+
+
+    /*
+       ದಿನಾಂಕದ ಕ್ರಮದಲ್ಲಿ
+    */
+
+    entries.sort(
+        (a,b)=>
+        new Date(a.rawDate) -
+        new Date(b.rawDate)
+    );
+
+
+
+    saveAndRender();
+
+
+
+    /*
+       Input clear
+    */
+
+    document.getElementById(
+        'att1to5'
+    ).value="0";
+
+
+    document.getElementById(
+        'att6to8'
+    ).value="0";
+
+
+    document.getElementById(
+        'attTotal'
+    ).value="0";
+
+}
+
+
+
+/* =========================================
+   DELETE
+========================================= */
+
+function deleteEntry(id){
+
+    if(
+        confirm(
+            "ಈ ನಮೂದನ್ನು ಅಳಿಸಲು ನೀವು ನಿಶ್ಚಿತವಾಗಿದ್ದೀರಾ?"
+        )
+    ){
+
+        entries =
+            entries.filter(
+                e=>e.id!==id
+            );
+
+        saveAndRender();
+
+    }
+
+}
+
+
+
+/* =========================================
+   CLEAR ALL
+========================================= */
+
+function clearAllData(){
+
+    if(
+        confirm(
+            "ಎಲ್ಲಾ ಮಾಹಿತಿಯನ್ನು ಅಳಿಸಲು ನೀವು ನಿಶ್ಚಿತವಾಗಿದ್ದೀರಾ?"
+        )
+    ){
+
+        entries=[];
+
+        saveAndRender();
+
+    }
+
+}
+
+
+
+/* =========================================
+   SAVE + RENDER
+========================================= */
+
+function saveAndRender(){
+
+    localStorage.setItem(
+        'snf_entries_v2',
+        JSON.stringify(entries)
+    );
+
+    renderTable();
+
+}
+
+
+
+/* =========================================
+   RENDER TABLE
+========================================= */
+
+function renderTable(){
+
+    const tbody =
+        document.getElementById(
+            'dataTableBody'
+        );
+
+
+    tbody.innerHTML="";
+
+
+
+    let sum1to5=0;
+    let sum6to8=0;
+    let sumTotalAtt=0;
+
+    let sumEggRate=0;
+    let sumEggTrans=0;
+    let sumEggPeel=0;
+    let sumEggFuel=0;
+
+    let sumBananaRate=0;
+    let sumBananaTrans=0;
+
+    let sumGrandTotal=0;
+
+
+
+    entries.forEach(item=>{
+
+        /*
+           Number conversion
+        */
+
+        const att1 =
+            Number(item.att1to5)||0;
+
+        const att6 =
+            Number(item.att6to8)||0;
+
+        const total =
+            Number(item.totalAtt)||0;
+
+        const eggRate =
+            Number(item.eggRate)||0;
+
+        const eggTrans =
+            Number(item.eggTrans)||0;
+
+        const eggPeel =
+            Number(item.eggPeel)||0;
+
+        const eggFuel =
+            Number(item.eggFuel)||0;
+
+        const bananaRate =
+            Number(item.bananaRate)||0;
+
+        const bananaTrans =
+            Number(item.bananaTrans)||0;
+
+        const rowTotal =
+            Number(item.rowTotal)||0;
+
+
+
+        sum1to5 += att1;
+
+        sum6to8 += att6;
+
+        sumTotalAtt += total;
+
+        sumEggRate += eggRate;
+
+        sumEggTrans += eggTrans;
+
+        sumEggPeel += eggPeel;
+
+        sumEggFuel += eggFuel;
+
+        sumBananaRate += bananaRate;
+
+        sumBananaTrans += bananaTrans;
+
+        sumGrandTotal += rowTotal;
+
+
+
+        const tr =
+            document.createElement('tr');
+
+
+
+        tr.innerHTML=`
+
+<td>
+<strong>${item.date}</strong>
+</td>
+
+<td>
+${att1}
+</td>
+
+<td>
+${att6}
+</td>
+
+<td>
+<strong>${total}</strong>
+</td>
+
+<td>
+${item.foodType}
+</td>
+
+<td>
+${item.grantType}
+</td>
+
+<td>
+${eggRate ? eggRate.toFixed(2) : '-'}
+</td>
+
+<td>
+${eggTrans ? eggTrans.toFixed(2) : '-'}
+</td>
+
+<td>
+${eggPeel ? eggPeel.toFixed(2) : '-'}
+</td>
+
+<td>
+${eggFuel ? eggFuel.toFixed(2) : '-'}
+</td>
+
+<td>
+${bananaRate ? bananaRate.toFixed(2) : '-'}
+</td>
+
+<td>
+${bananaTrans ? bananaTrans.toFixed(2) : '-'}
+</td>
+
+<td>
+<strong>
+${rowTotal.toFixed(2)}
+</strong>
+</td>
+
+<td class="no-print">
+
+<button
+    class="btn btn-danger"
+    style="padding:3px 8px;font-size:11px;"
+    onclick="deleteEntry(${item.id})"
+>
+ಅಳಿಸು
+</button>
+
+</td>
+
+`;
+
+
+
+        tbody.appendChild(tr);
+
+    });
+
+
+
+    /*
+       TOTAL ROW
+    */
+
+    const tfoot =
+        document.getElementById(
+            'totalRow'
+        );
+
+
+    tfoot.innerHTML=`
+
+<td>
+ಒಟ್ಟು
+</td>
+
+<td>
+${sum1to5}
+</td>
+
+<td>
+${sum6to8}
+</td>
+
+<td>
+${sumTotalAtt}
+</td>
+
+<td>
+-
+</td>
+
+<td>
+-
+</td>
+
+<td>
+₹${sumEggRate.toFixed(2)}
+</td>
+
+<td>
+₹${sumEggTrans.toFixed(2)}
+</td>
+
+<td>
+₹${sumEggPeel.toFixed(2)}
+</td>
+
+<td>
+₹${sumEggFuel.toFixed(2)}
+</td>
+
+<td>
+₹${sumBananaRate.toFixed(2)}
+</td>
+
+<td>
+₹${sumBananaTrans.toFixed(2)}
+</td>
+
+<td>
+₹${sumGrandTotal.toFixed(2)}
+</td>
+
+<td class="no-print">
+-
+</td>
+
+`;
+
+
+
+    /* =====================================
+       APF / STATE MONTHLY CONSOLIDATION
+    ===================================== */
+
+
+    let apfDays=0;
+
+    let apfEggAttendance=0;
+
+    let apfBananaAttendance=0;
+
+
+    let stateDays=0;
+
+    let stateEggAttendance=0;
+
+    let stateBananaAttendance=0;
+
+
+
+    entries.forEach(item=>{
+
+        const grant =
+            item.grantType || "";
+
+        const food =
+            item.foodType || "";
+
+        const attendance =
+            Number(item.totalAtt)||0;
+
+
+
+        /*
+           APF
+        */
+
+        if(grant==="APF"){
+
+            apfDays++;
+
+
+            if(
+                food.includes("ಮೊಟ್ಟೆ")
+            ){
+
+                apfEggAttendance +=
+                    attendance;
+
+            }
+
+
+            if(
+                food.includes("ಬಾಳೆಹಣ್ಣು")
+            ){
+
+                apfBananaAttendance +=
+                    attendance;
+
+            }
+
+        }
+
+
+
+        /*
+           STATE
+        */
+
+        if(grant==="STATE"){
+
+            stateDays++;
+
+
+            if(
+                food.includes("ಮೊಟ್ಟೆ")
+            ){
+
+                stateEggAttendance +=
+                    attendance;
+
+            }
+
+
+            if(
+                food.includes("ಬಾಳೆಹಣ್ಣು")
+            ){
+
+                stateBananaAttendance +=
+                    attendance;
+
+            }
+
+        }
+
+    });
+
+
+
+    /*
+       APF
+    */
+
+    document.getElementById(
+        'apfDays'
+    ).innerText=apfDays;
+
+
+    document.getElementById(
+        'apfEggAttendance'
+    ).innerText=apfEggAttendance;
+
+
+    document.getElementById(
+        'apfBananaAttendance'
+    ).innerText=apfBananaAttendance;
+
+
+
+    /*
+       STATE
+    */
+
+    document.getElementById(
+        'stateDays'
+    ).innerText=stateDays;
+
+
+    document.getElementById(
+        'stateEggAttendance'
+    ).innerText=stateEggAttendance;
+
+
+    document.getElementById(
+        'stateBananaAttendance'
+    ).innerText=stateBananaAttendance;
+
+
+
+    /*
+       ವೆಚ್ಚ
+    */
+
+    const subTotalEgg =
+
+        sumEggRate +
+        sumEggTrans +
+        sumEggPeel +
+        sumEggFuel;
+
+
+
+    const subTotalBanana =
+
+        sumBananaRate +
+        sumBananaTrans;
+
+
+
+    document.getElementById(
+        'conEggCost'
+    ).innerText =
+        '₹ ' +
+        sumEggRate.toFixed(2);
+
+
+
+    document.getElementById(
+        'conEggTrans'
+    ).innerText =
+        '₹ ' +
+        sumEggTrans.toFixed(2);
+
+
+
+    document.getElementById(
+        'conEggPeel'
+    ).innerText =
+        '₹ ' +
+        sumEggPeel.toFixed(2);
+
+
+
+    document.getElementById(
+        'conEggFuel'
+    ).innerText =
+        '₹ ' +
+        sumEggFuel.toFixed(2);
+
+
+
+    document.getElementById(
+        'conEggSubTotal'
+    ).innerText =
+        '₹ ' +
+        subTotalEgg.toFixed(2);
+
+
+
+    document.getElementById(
+        'conBananaCost'
+    ).innerText =
+        '₹ ' +
+        sumBananaRate.toFixed(2);
+
+
+
+    document.getElementById(
+        'conBananaTrans'
+    ).innerText =
+        '₹ ' +
+        sumBananaTrans.toFixed(2);
+
+
+
+    document.getElementById(
+        'conBananaSubTotal'
+    ).innerText =
+        '₹ ' +
+        subTotalBanana.toFixed(2);
+
+
+
+    document.getElementById(
+        'conGrandTotal'
+    ).innerText =
+        '₹ ' +
+        sumGrandTotal.toFixed(2);
+
+}
+
+
+
+/* =========================================
+   PRINT DISTRIBUTION REGISTER
+========================================= */
+
+function printRegister(){
+
+    document
+        .getElementById(
+            'consolidationPrintArea'
+        )
+        .classList.add('no-print');
+
+
+    document
+        .getElementById(
+            'registerPrintArea'
+        )
+        .classList.remove('no-print');
+
+
+    window.print();
+
+
+    document
+        .getElementById(
+            'consolidationPrintArea'
+        )
+        .classList.remove('no-print');
+
+}
+
+
+
+/* =========================================
+   PRINT CONSOLIDATION
+========================================= */
+
+function printConsolidation(){
+
+    document
+        .getElementById(
+            'registerPrintArea'
+        )
+        .classList.add('no-print');
+
+
+    document
+        .getElementById(
+            'consolidationPrintArea'
+        )
+        .classList.remove('no-print');
+
+
+    window.print();
+
+
+    document
+        .getElementById(
+            'registerPrintArea'
+        )
+        .classList.remove('no-print');
+
+}
+
+</script>
+
+</body>
+  </html>
